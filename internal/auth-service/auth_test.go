@@ -135,7 +135,8 @@ var _ = Describe("Auth", func() {
 		informerFactory.WaitForCacheSync(wait.NeverStop)
 
 		namespaceManager := tenantnamespace.NewTenantNamespaceManager(cluster.GetClient().Client())
-		identityManager := identitymanager.NewCertificateIdentityManager(cluster.GetClient().Client(), &clusterID, namespaceManager)
+		identityProvider := identitymanager.NewCertificateIdentityProvider(
+			context.Background(), cluster.GetClient().Client(), &clusterID, namespaceManager)
 
 		authService = Controller{
 			namespace:            "default",
@@ -144,7 +145,7 @@ var _ = Describe("Auth", func() {
 			secretInformer:       secretInformer,
 			localClusterID:       &clusterID,
 			namespaceManager:     namespaceManager,
-			identityManager:      identityManager,
+			identityProvider:     identityProvider,
 			useTLS:               false,
 			credentialsValidator: &tokenValidator{},
 			apiServerConfig: &v1alpha1.APIServerConfig{

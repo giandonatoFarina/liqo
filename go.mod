@@ -43,13 +43,13 @@ require (
 	gotest.tools v2.2.0+incompatible
 	helm.sh/helm/v3 v3.6.2
 	inet.af/netaddr v0.0.0-20210313195008-843b4240e319
-	k8s.io/api v0.21.3
-	k8s.io/apimachinery v0.21.3
-	k8s.io/client-go v0.21.3
-	k8s.io/component-helpers v0.21.3
+	k8s.io/api v0.19.3
+	k8s.io/apimachinery v0.19.3
+	k8s.io/client-go v0.19.3
+	k8s.io/component-helpers v0.19.3
 	k8s.io/klog/v2 v2.9.0
-	k8s.io/kubectl v0.21.3
-	k8s.io/metrics v0.21.3
+	k8s.io/kubectl v0.19.3
+	k8s.io/metrics v0.19.3
 	k8s.io/utils v0.0.0-20210722164352-7f3ee0f31471
 	sigs.k8s.io/aws-iam-authenticator v0.5.3
 	sigs.k8s.io/controller-runtime v0.9.6

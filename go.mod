@@ -46,7 +46,7 @@ require (
 	k8s.io/api v0.19.3
 	k8s.io/apimachinery v0.19.3
 	k8s.io/client-go v0.19.3
-	k8s.io/component-helpers v0.19.3
+	k8s.io/component-helpers v0.21.0
 	k8s.io/klog/v2 v2.9.0
 	k8s.io/kubectl v0.19.3
 	k8s.io/metrics v0.19.3
